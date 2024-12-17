@@ -1,0 +1,82 @@
+/* Form Container */
+.form-container {
+  background: linear-gradient(145deg, #ff7e5f, #feb47b);
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header */
+.form-container h2 {
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Label */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 2px solid #fff;
+  background-color: #fff;
+  font-size: 1em;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #ff7e5f;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 126, 95, 0.5);
+}
+
+/* Phone Number Input */
+input[type="tel"] {
+  text-transform: uppercase;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ff7e5f;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #d3d3d3;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #feb47b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-container {
+    padding: 20px;
+    margin: 20px;
+  }
+}

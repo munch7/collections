@@ -1,0 +1,31 @@
+<div class="form-container">
+  <h2>Data Collection Form</h2>
+  <form [formGroup]="dataForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="fullname">Full Names</label>
+      <input id="fullname" formControlName="fullname" />
+    </div>
+
+    <div>
+      <label for="fathersname">Father's Name</label>
+      <input id="fathersname" formControlName="fathersname" />
+    </div>
+
+    <div>
+      <label for="mothersname">Mother's Name</label>
+      <input id="mothersname" formControlName="mothersname" />
+    </div>
+
+    <div>
+      <label for="email">Email</label>
+      <input id="email" formControlName="email" type="email" />
+    </div>
+
+    <div>
+      <label for="phone">Phone (10 digits)</label>
+      <input id="phone" formControlName="phone" type="tel" />
+    </div>
+
+    <button type="submit" [disabled]="dataForm.invalid">Submit</button>
+  </form>
+</div>
